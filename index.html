@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>GDFULL</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/Navbar-Centered-Links.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand sticky-top py-3" style="background: #ffffff;">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span>GeometryDashAP (RU)</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-3">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Основное</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bots.html">Боты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="other.html">Другое</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Nav Item</a></li>
+                </ul><a class="btn btn-primary" role="button" href="#main">Кнопочка)</a>
+            </div>
+        </div>
+    </nav>
+    <main id="main"></main>
+    <div id="home">
+        <form>
+            <h1 class="text-center">GeometryDashAP</h1>
+            <h4 class="text-center">Разделы</h4>
+            <p class="text-center"><a class="btn btn-primary" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" href="#perfects" title="Перфекты">Perfects</a>&nbsp;<a class="btn btn-primary" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" href="#physic" title="Физика">Physic</a></p>
+        </form>
+    </div>
+    <div id="perfects">
+        <h1 class="text-center">Perfects</h1>
+        <form class="text-center" style="transform: perspective(0px);--bs-body-bg: #ffffff;box-shadow: 0px 0px 1px;">
+            <h4 class="text-center">Pixel Perfect</h4>
+            <h5 class="text-center">Термин</h5>
+            <p>Тайминг, для прохождения которого необходим 1 конкретный кадр<br></p>
+            <h5 class="text-center">Создание</h5>
+            <p>Создается путем усложнения обычного тайминга, до того момента, пока не будет доступен только 1 кадр</p>
+        </form>
+        <form class="text-center" style="transform: perspective(0px);--bs-body-bg: #ffffff;box-shadow: 0px 0px 1px;">
+            <h4 class="text-center">Align Perfect</h4>
+            <h5 class="text-center">Термин</h5>
+            <p>Тайминг, для прохождения которого необходимо правильно пройти прошлые клики<br></p>
+            <h5 class="text-center">Создание</h5>
+            <p>xPos Align - Создается путем добавления в уровень немного повернутых порталов скорости, и установки после этого пиксель перфектов для конкретного пути через портал (по макросу)<br>yPos Align - Создается путем добавления в уровень нескольких легких таймингов, или повернутых порталов гравитации, после которых идет пиксель перфект для конкретного пути (по макросу)<br><a data-bs-toggle="tooltip" data-bss-tooltip="" style="text-decoration: underline;" title="Что бы yPos Align был правильным, нельзя что бы игрок находился больше кадра на ровной поверхности (На солид обьектах), тоесть игрок должен быть с зажатой кнопкой прыжка, и тогда все будет работать правильно">Подробнее</a></p>
+        </form>
+    </div>
+    <div id="physic">
+        <h1 class="text-center">Physic</h1>
+        <form class="text-center" style="transform: perspective(0px);--bs-body-bg: #ffffff;box-shadow: 0px 0px 1px;">
+            <h4 class="text-center">Xpos Limit</h4>
+            <h5 class="text-center">Термин</h5>
+            <p>Барьер, из за которого игрок не может продолжать движение</p>
+            <h5 class="text-center">Работа</h5>
+            <p data-bs-toggle="tooltip" data-bss-tooltip="" title="Не точное определение!">Игра считает позицию как float, и каждый раз меняет положение, но из за особенностей вычислений, чем выше фпс, тем чаще идет вычисление, из за этого, чем выше фпс, тем быстрее счетчик становится настолько не точным, что просто ломается</p>
+        </form>
+        <form class="text-center" style="transform: perspective(0px);--bs-body-bg: #ffffff;box-shadow: 0px 0px 1px;">
+            <h4 class="text-center">Speed Scroll Bug</h4>
+            <h5 class="text-center">Термин</h5>
+            <p>Игрок движется немного быстрее, чем должен, что создает разрыв между музыкой и геймплеем<br></p>
+            <h5 class="text-center">Работа</h5>
+            <p data-bs-toggle="tooltip" data-bss-tooltip="" title="Не точное определение!">Чем больше фпс, тем менее точным становится высчитывание положения игрока, из за этого позиция игрока меняется на большее значение чем требуется</p>
+        </form>
+    </div>
+    <div id="gameplay">
+        <h1 class="text-center">Gameplay</h1>
+        <form class="text-center" style="transform: perspective(0px);--bs-body-bg: #ffffff;box-shadow: 0px 0px 1px;">
+            <h4 class="text-center">FrameGate</h4>
+            <h5 class="text-center">Термин</h5>
+            <p>Искусственно созданное ограничение по количеству фпс в уровне<br></p>
+            <h5 class="text-center">Создание</h5>
+            <p>
+            <div class="btn-group" role="group"><button class="btn btn-primary" type="button" onclick="frameget_minfps_fun()()">Минимальный фпс</button><button class="btn btn-primary" type="button" onclick="frameget_maxfps_fun()">Максимальный фпс</button></div><br></p>
+            <div id="frameget_minfps_div">
+                <p>Необходимо максимально бафнуть шипы до нивидимых хитбоксов</p>
+                <div class="container d-flex flex-column align-items-center py-4 py-xl-5">
+                    <div class="row gy-4 row-cols-1 row-cols-md-2 w-100" style="max-width: 800px;">
+                        <div class="col order-md-first">
+                            <div class="card"><img class="card-img w-100 d-block" src="https://cdn.discordapp.com/attachments/971824042262806598/1000314316328800306/unknown.png?size=4096">
+                                <p>Как должно выглядить (60 ФПС)</p>
+                            </div>
+                        </div>
+                        <div class="col d-md-flex order-first justify-content-md-start align-items-md-end order-md-1">
+                            <div class="card"><img class="card-img w-100 d-block" src="https://cdn.discordapp.com/attachments/971824042262806598/1000315951683739658/unknown.png?size=4096">
+                                <p>Как выглядит с реальными хитбоксами</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="frameget_maxfps_div">
+                <p>Необходимо максимально бафнуть шипы, а под ними поставить синий батут, и синий орб, и тогда это нельзя будет пройти на фпс меньше</p>
+                <div class="container text-center d-flex flex-column align-items-center py-4 py-xl-5">
+                    <div class="card text-center"><img class="card-img w-100 d-block" src="https://cdn.discordapp.com/attachments/971824042262806598/1000326324126228520/unknown.png?size=4096">
+                        <p>Как должно выглядить (60 ФПС)</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <form class="text-center" style="transform: perspective(0px);--bs-body-bg: #ffffff;box-shadow: 0px 0px 1px;">
+            <h4 class="text-center">Align Perfect</h4>
+            <h5 class="text-center">Термин</h5>
+            <p>Тайминг, для прохождения которого необходимо правильно пройти прошлые клики<br></p>
+            <h5 class="text-center">Создание</h5>
+            <p>xPos Align - Создается путем добавления в уровень немного повернутых порталов скорости, и установки после этого пиксель перфектов для конкретного пути через портал (по макросу)<br>yPos Align - Создается путем добавления в уровень нескольких легких таймингов, или повернутых порталов гравитации, после которых идет пиксель перфект для конкретного пути (по макросу)<br><a data-bs-toggle="tooltip" data-bss-tooltip="" style="text-decoration: underline;" title="Что бы yPos Align был правильным, нельзя что бы игрок находился больше кадра на ровной поверхности (На солид обьектах), тоесть игрок должен быть с зажатой кнопкой прыжка, и тогда все будет работать правильно">Подробнее</a></p>
+        </form>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
